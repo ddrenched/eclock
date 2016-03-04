@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2E2E2E;
+    font-size: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.main{
+    width: 1020px;
+    height: 250px;
+    margin: 100px auto 0 auto;
+    /*
+    background-color: bisque;
+    */
+}
+.hour-wrap{
+    vertical-align: top;
+}
+.hour-wrap, .minute-wrap, .second-wrap{
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    margin: 0 20px;
+    color: #CCFF00;
+    -webkit-perspective: 600px;
+    -webkit-transform-origin: 50% 50%;
+}
+.hour-decade, .hour-unit, .minute-decade, .minute-unit, .second-decade, .second-unit{
+    display: inline-block;
+    width: 146px;
+    height: 250px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+}
+.d-hour, .u-hour, .d-minute, .u-minute, .d-second, .u-second{
+    position: absolute;
+    text-align: center;
+    font-size: 250px;
+    line-height: 250px;
+    background-color: #1E1E1E;
+}
+.d-hour0, .u-hour0, .d-minute0, .u-minute0, .d-second0, .u-second0{
+    -webkit-transform-origin: bottom;
+    -webkit-transition: 0.5s linear;
+}
+.u-hour1, .u-hour2, .u-hour3, .u-hour4, .u-hour5, .u-hour6, .u-hour7, .u-hour8, .u-hour9,
+.d-hour1, .d-hour2, .d-hour3, .d-hour4, .d-hour5, .d-hour6, .d-hour7, .d-hour8, .d-hour9,
+.u-minute1, .u-minute2, .u-minute3, .u-minute4, .u-minute5, .u-minute6, .u-minute7, .u-minute8, .u-minute9,
+.d-minute1, .d-minute2, .d-minute3, .d-minute4, .d-minute5, .d-minute6, .d-minute7, .d-minute8, .d-minute9,
+.u-second1, .u-second2, .u-second3, .u-second4, .u-second5, .u-second6, .u-second7, .u-second8, .u-second9,
+.d-second1, .d-second2, .d-second3, .d-second4, .d-second5, .d-second6, .d-second7, .d-second8, .d-second9{
+    -webkit-transform-origin: bottom;
+    -webkit-transform: rotateX(90deg);
+    -webkit-transition: 0.5s linear;
+}
+
+
+
+
+.control{
+    width: 700px;
+    height: 100px;
+    margin: 80px auto 0 auto;
+    /*
+    background-color: beige;
+    */
+}
+.start{
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    margin: 0 50px;
+    border-radius: 20px;
+    border: 1px solid #CCFF00;
+    text-align: center;
+    line-height: 100px;
+}
+.reset{
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    margin: 0 45px;
+    border-radius: 20px;
+    border: 1px solid #CCFF00;
+    text-align: center;
+    line-height: 100px;
+
+}
+.start a, .reset a{
+    font-size: 60px;
+    color: #CCFF00;
+    text-decoration: none;
+}
+.start:hover, .reset:hover{
+    cursor: pointer;
+    background-color: #1E1E1E;
+}
