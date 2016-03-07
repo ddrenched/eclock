@@ -2,7 +2,7 @@
  * Created by willli on 16/2/20.
  */
 
-window.onload = function start(){
+function start(){
     setInterval(Second, 1000);
     setInterval(Minute, 60000);
     setInterval(Hour, 3600000);
